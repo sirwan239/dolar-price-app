@@ -1,4 +1,3 @@
-import com.android.build.gradle.tasks.CheckAarMetadataTask
 
 plugins {
     id("com.android.application")
@@ -74,6 +73,3 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
 }
 
-tasks.withType<CheckAarMetadataTask>().configureEach {
-    enabled = false
-}
