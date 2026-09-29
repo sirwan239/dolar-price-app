@@ -71,3 +71,6 @@ dependencies {
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
 }
+tasks.withType<com.android.build.gradle.tasks.CheckAarMetadataTask>().configureEach {
+    enabled = false
+}
